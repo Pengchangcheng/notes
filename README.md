@@ -6,3 +6,6 @@
 [ES简单学习例子及IK远程字典的使用](https://github.com/Pengchangcheng/elasticsearch_demo)   
 [IK分词demo](https://github.com/Pengchangcheng/Demos)     
 [地图API基础研究](https://github.com/Pengchangcheng/mapDemo)
+### 180821       
+[java核心类学习](https://github.com/Pengchangcheng/notes/blob/master/java-core-learning-example.java)       
+[膜拜大佬](https://github.com/JeffLi1993)
