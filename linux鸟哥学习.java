@@ -331,9 +331,23 @@ diff [-bBi] from-file to-file
 cmp 对比字节
 ----------------------------------------------------------------------------------------
 27.shell script （程序化脚本）
-
-
-
+计算生日
+#!/bin/bash
+read -p "Pleas input your birthday （MMDD, ex&gt; 0709）: " bir
+now=`date +%m%d`
+if [ "$bir" == "$now" ]; then
+echo "Happy Birthday to you!!!"
+elif [ "$bir" -gt "$now" ]; then
+year=`date +%y`
+total_d=$(($((`date --date="$year$bir" +%s`-`date +%s`))/60/60/24))
+echo "Your birthday will be $total_d later"
+else
+year=$((`date +%Y`+1))
+total_d=$(($((`date --date="$year$bir" +%s`-`date +%s`))/60/60/24))
+echo "Your birthday will be $total_d days later"
+fi
+----------------------------------------------------------------------------------------
+28.
 
 
 
