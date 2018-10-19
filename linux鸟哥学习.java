@@ -347,9 +347,34 @@ total_d=$(($((`date --date="$year$bir" +%s`-`date +%s`))/60/60/24))
 echo "Your birthday will be $total_d days later"
 fi
 ----------------------------------------------------------------------------------------
-28.
+28.Linux 的帐号与群组
+使用者识别码： UID 与 GID
+UID User ID
+GID Group ID 
+----------------------------------------------------------------------------------------
+29.SELinux
+ls -Z
+lrwxrwxrwx. root root system_u:object_r:bin_t:s0       bin -> usr/bin
+Identify:role:type
+身份识别:角色:类型
 
+Identify：
+unconfined_u：不受限的用户
+system_u：系统用户
 
+Role：
+object_r：代表的是文件或目录等文件资源
+system_r：代表的就是程序
+
+Type:
+type：在文件资源 （Object） 上面称为类型 （Type）；
+domain：在主体程序 （Subject） 则称为领域 （domain）
+
+----------------------------------------------------------------------------------------
+*主要是学会了简单的Linux命令和Linux文件权限相关，
+*vim简单操作
+*正则表达式，这个值得一读，鸟哥讲的非常不错，且正则在其他地方使用的也非常广泛
+*建议切合实际操作阅读，买一个小的云服务器即可
 
 
 
